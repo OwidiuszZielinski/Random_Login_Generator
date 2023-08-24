@@ -2,9 +2,32 @@
  * This file has been created by the Vaadin Theme Editor. Please note that
  * manual changes to individual CSS properties may be overwritten by the theme editor.
  */
-h1.i-ng-login-generator-view-h1-1 { color:rgba(0,0,0,1); }
 
-vaadin-app-layout.main-layout-app-layout-1 { background-color:rgba(255,255,255,1); }
+vaadin-grid::part(cell){
+  background-color:rgba(255,107,0,0.72);
+  border-color:rgba(0,0,0,0.9);
+
+  border-width:2px;
+  color:rgba(0,0,0,0.9);
+  padding-inline:var(--lumo-space-s);
+
+}
+vaadin-grid::part(header-cell){
+background-color:rgba(82,81,153);
+color: white;
+}
+
+vaadin-grid {
+border-color:rgba(0,0,0,0.9);border-width:2px;
+background-color:rgba(184,171,217,1); }
+
+
+h1.i-ng-login-generator-view-h1-1 {
+  color:rgba(0,0,0,1);
+  font-family:Consolas;
+}
+
+vaadin-app-layout.main-layout-app-layout-1 { background-color:rgba(184,171,217,1); }
 
 vaadin-app-layout.main-layout-app-layout-1::part(drawer) { background-color:rgba(255,138,0,1); }
 
@@ -17,7 +40,8 @@ vaadin-button.i-ng-login-generator-view-button-1 {
 
 vaadin-button.i-ng-login-generator-view-button-1::part(label) { color:var(--lumo-body-text-color); }
 
-vaadin-text-field.i-ng-login-generator-view-text-field-1::part(input-field) { border-color:rgba(0,0,0,1); }
+vaadin-text-field.i-ng-login-generator-view-text-field-1::part(input-field)
+{ border-color:rgba(0,0,0,1); }
 
 vaadin-text-field.i-ng-login-generator-view-text-field-2::part(error-message) { color:rgba(0,0,0,1); }
 
